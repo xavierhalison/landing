@@ -9,8 +9,8 @@ function App() {
   return (
     <Layout>
       <MainSection />
-      <CardsSection />
       <FeaturesSection />
+      <CardsSection />
       <DropdownTextsSection />
       <FooterSection />
     </Layout>

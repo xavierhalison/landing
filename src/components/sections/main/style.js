@@ -20,6 +20,7 @@ const Container = styled.div`
     @media screen and (min-width: 1025px) {
       text-align: left;
       align-self: end;
+      width: 100%;
     }
   }
 
@@ -27,6 +28,7 @@ const Container = styled.div`
     text-align: center;
     color: var(--main-text);
     font-family: "Montserrat Alternates";
+    line-height: 1.4rem;
 
     @media screen and (min-width: 1025px) {
       font-size: 0.8rem;

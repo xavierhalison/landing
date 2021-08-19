@@ -8,19 +8,17 @@ import illUstration2 from "assets/images/illustration2.svg";
 function Features() {
   return (
     <Container id="features">
-      <Title gradient>
-        Esse vai ser o título da terceira seção e será grande
-      </Title>
+      <Title gradient>These are some of my skills:</Title>
       <Illustration2 src={illUstration2} alt="" />
       <FeatureList>
-        <li>Alguma feature</li>
-        <li>Mais uma feature</li>
+        <li>ES6+ Javascript and React</li>
+        <li>Building complex layouts with CSS3 and HTML5</li>
         <li>
-          Essa feature vai ter um textão enorme pra gente ver como se comporta
+          Modern frameworks such as Next.js and Libs such as Styled Components
         </li>
-        <li>teste</li>
+        <li>Typescript</li>
       </FeatureList>
-      <MainCTA>Ação Principal</MainCTA>
+      <MainCTA>My XP</MainCTA>
     </Container>
   );
 }

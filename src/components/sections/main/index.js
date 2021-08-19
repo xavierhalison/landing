@@ -9,12 +9,15 @@ import illUstration1 from "assets/images/illustration1.svg";
 function MainSection() {
   return (
     <Container id="inicio">
-      <Title gradient>Halison - Landing Page em React</Title>
+      <Title gradient>Halison Xavier</Title>
       <Illustration src={illUstration1} alt="" />
-      <Subtitle>Escreva aqui alguma coisa de relevante para vender</Subtitle>
+      <Subtitle>
+        Frontend Software Engineer, Open Source Enthusiast, Web Crafter,
+        Javascript Lover.
+      </Subtitle>
       <BtnWrapper>
-        <MainCTA>Ação Principal</MainCTA>
-        <SubCTA>Ação Secundária</SubCTA>
+        <MainCTA>My Skills</MainCTA>
+        <SubCTA>My XP</SubCTA>
       </BtnWrapper>
     </Container>
   );

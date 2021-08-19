@@ -11,17 +11,17 @@ const Container = styled.div`
 
   @media screen and (min-width: 1025px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 2fr 0.5fr 1fr;
     align-items: center;
     padding: 0 var(--padding-lg);
   }
 
   ${MainCTA} {
     @media screen and (min-width: 1025px) {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      align-self: baseline;
-      justify-self: baseline;
+      grid-column: 2;
+      grid-row: 3;
+      align-self: start;
+      justify-self: center;
     }
   }
 
@@ -30,8 +30,9 @@ const Container = styled.div`
     font-family: "Montserrat";
 
     @media screen and (min-width: 1025px) {
-      text-align: left;
+      /* text-align: left; */
       grid-column: 1 / 2;
+      grid-row: 1;
       font-size: 36px;
       align-self: end;
       margin-bottom: 40px;
@@ -46,9 +47,10 @@ const Illustration2 = styled.img`
   @media screen and (min-width: 1025px) {
     width: 500px;
     align-self: center;
-    grid-row: 1/2;
+    grid-row: 1/3;
     grid-column: 2/3;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin: 0;
   }
 `;
 
@@ -58,9 +60,10 @@ const FeatureList = styled.ul`
   color: var(--main-text);
 
   @media screen and (min-width: 1025px) {
-    grid-column: 2 / 3;
+    grid-column: 1;
+    grid-row: 2 / 3;
     justify-self: baseline;
-    align-self: baseline;
+    align-self: center;
   }
 
   li {

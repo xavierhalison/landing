@@ -27,6 +27,7 @@ const SubCTA = styled(CTA)`
   font-weight: 500;
   background-image: var(--linear-gradient-1);
   color: var(--main-text);
+  border: 1px solid;
 `;
 
 export { MainCTA, SubCTA };
