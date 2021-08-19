@@ -6,20 +6,20 @@ import Card from "components/card";
 function CardSection() {
   return (
     <Container id="cards">
-      <Title gradient>Achei que faria sentido ter título aqui também</Title>
+      <Title gradient>My experience working with web development</Title>
       <Card
-        title="Teste de título"
-        text="Algum texto que você vê escrito em cards de landing pages"
+        title="Sambatech - 2020/present"
+        text="I work building web applications to our clients and products using React, Next.js and Styled-Components"
         colorScheme={1}
       />
       <Card
-        title="Teste de título"
-        text="Algum texto que você vê escrito em cards de landing pages"
+        title="Reframax Engenharia - 2018/2019"
+        text="I've improved my knowledge in the web development fundamentals working with Vanilla JS and jQuery"
         colorScheme={2}
       />
       <Card
-        title="Teste de título"
-        text="Algum texto que você vê escrito em cards de landing pages"
+        title="Faminas-BH"
+        text="I've learned the fundamentals of web development working as Full Stack using PHP, MySQL and Javascript"
         colorScheme={3}
       />
     </Container>
