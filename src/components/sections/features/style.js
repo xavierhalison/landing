@@ -8,6 +8,7 @@ const Container = styled.div`
   display: grid;
   justify-items: center;
   align-content: center;
+  position: relative;
 
   @media screen and (min-width: 1025px) {
     grid-template-columns: 1fr 1fr;

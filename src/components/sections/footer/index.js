@@ -13,7 +13,7 @@ import { MainCTA } from "components/CTAs";
 
 function Footer() {
   return (
-    <Container>
+    <Container id="footer">
       <PersonalSection>
         <Title gradient>Halison</Title>
         <SocialMediaLogos>

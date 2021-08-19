@@ -1,6 +1,8 @@
 import { MainCTA } from "components/CTAs";
 import { H2 as Title } from "components/headings";
 
+import { TopTilt } from "components/dividers";
+
 import { Container, Illustration2, FeatureList } from "./style";
 
 import illUstration2 from "assets/images/illustration2.svg";
@@ -8,6 +10,7 @@ import illUstration2 from "assets/images/illustration2.svg";
 function Features() {
   return (
     <Container id="features">
+      <TopTilt />
       <Title gradient>These are some of my skills:</Title>
       <Illustration2 src={illUstration2} alt="" />
       <FeatureList>

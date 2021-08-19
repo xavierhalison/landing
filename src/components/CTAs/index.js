@@ -12,6 +12,12 @@ const CTA = styled.button`
   margin: 5px 0;
   width: 240px;
 
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 3px var(--main-text);
+  }
+
   @media screen and (min-width: 1025px) {
     margin: 0;
     margin-right: 10px;

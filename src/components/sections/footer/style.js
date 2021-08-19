@@ -4,7 +4,7 @@ import { MainCTA } from "components/CTAs";
 import { Input } from "components/formField";
 
 const Container = styled.div`
-  background-image: var(--linear-gradient-1);
+  background-image: var(--linear-gradient-5);
   height: 60vh;
   padding: var(--padding-sm);
   display: grid;

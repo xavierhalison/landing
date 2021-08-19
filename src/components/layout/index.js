@@ -4,10 +4,10 @@ import { Container } from "./style";
 
 function Layout({ children }) {
   const sections = [
-    { name: "Início", id: "inicio" },
-    { name: "Cards", id: "cards" },
-    { name: "Features", id: "features" },
-    { name: "Dropdowns", id: "dropdowns" },
+    { name: "my Skills", id: "features" },
+    { name: "my XP", id: "cards" },
+    { name: "more", id: "dropdowns" },
+    { name: "contact", id: "footer" },
   ];
 
   return (

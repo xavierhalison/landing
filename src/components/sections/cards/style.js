@@ -7,6 +7,7 @@ const Container = styled.div`
   display: grid;
   grid-gap: 20px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  position: relative;
 
   @media screen and (min-width: 1025px) {
     padding: 0 var(--padding-lg);
