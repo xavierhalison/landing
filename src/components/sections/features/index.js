@@ -1,7 +1,7 @@
 import { MainCTA } from "components/CTAs";
 import { H2 as Title } from "components/headings";
 
-import { TopTilt } from "components/dividers";
+import { TopTilt, TopWaveOpaque2 } from "components/dividers";
 
 import { Container, Illustration2, FeatureList } from "./style";
 
@@ -22,6 +22,7 @@ function Features() {
         <li>Typescript</li>
       </FeatureList>
       <MainCTA>My XP</MainCTA>
+      <TopWaveOpaque2 />
     </Container>
   );
 }

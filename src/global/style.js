@@ -55,7 +55,9 @@ export const GlobalStyle = createGlobalStyle`
         --linear-gradient-2: linear-gradient(135deg, #DE3190 0%, #A339FF 100%);
         --linear-gradient-3: linear-gradient(135deg, #A339FF 0%, #474BFF 100%);
         --linear-gradient-4: linear-gradient(135deg, #474BFF 0%, #474961 100%);
+
         --linear-gradient-5: linear-gradient(180deg, #F2F6FB 0%, #E1E5F0 100%);
+        --bg-main-section: linear-gradient(180deg, #FFFFFF 0%, #F2F6FB 100%);
 
         --radial-gradient-1: radial-gradient(circle, #FF5645 0%, #A339FF 50%, #474BFF 100%);
         --radial-gradient-2: radial-gradient(circle, #FFABA3 0%, #FFD79E 50%, #A9D3B7 100%);

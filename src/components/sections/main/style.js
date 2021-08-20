@@ -7,6 +7,7 @@ const Container = styled.div`
   height: calc(100vh - 50px);
   align-items: center;
   justify-items: center;
+  background-image: var(--bg-main-section);
 
   @media screen and (min-width: 1025px) {
     padding: 0 var(--padding-lg);

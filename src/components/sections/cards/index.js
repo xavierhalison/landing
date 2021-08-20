@@ -2,12 +2,10 @@ import { Container } from "./style";
 
 import { H2 as Title } from "components/headings";
 import Card from "components/card";
-import { TopWaveOpaque } from "components/dividers";
 
 function CardSection() {
   return (
     <Container id="cards">
-      <TopWaveOpaque />
       <Title gradient>My experience working with web development</Title>
       <Card
         title="Sambatech - 2020/present"

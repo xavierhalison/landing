@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { H2 as Title } from "components/headings";
 
 const Container = styled.div`
+  background-image: var(--linear-gradient-5);
   height: auto;
   padding: var(--padding-sm);
   display: grid;

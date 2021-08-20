@@ -6,7 +6,7 @@ import { H2 as Title } from "components/headings";
 import DropdownCard from "components/dropdownCard";
 import { MainCTA } from "components/CTAs";
 
-import { TopWaveOpaque2 } from "components/dividers";
+import { TopWaveOpaque, TopWaveOpaque2 } from "components/dividers";
 
 function CardSection() {
   const [expandedCard, toggleCard] = useState([true, false, false]);
@@ -19,7 +19,7 @@ function CardSection() {
 
   return (
     <Container id="dropdowns">
-      <TopWaveOpaque2 />
+      <TopWaveOpaque />
 
       <Title gradient>More about me</Title>
       <DropdownGrid>
@@ -58,6 +58,7 @@ function CardSection() {
         </DropdownCard>
       </DropdownGrid>
       <MainCTA>Contact</MainCTA>
+      <TopWaveOpaque2 />
     </Container>
   );
 }
