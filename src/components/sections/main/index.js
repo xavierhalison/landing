@@ -1,12 +1,19 @@
-import { Container, Illustration, BtnWrapper } from "./style";
-
 import { H1 as Title, H4 as Subtitle } from "components/headings";
-
 import { MainCTA, SubCTA } from "components/CTAs";
 
+import { Container, Illustration, BtnWrapper } from "./style";
 import illUstration1 from "assets/images/illustration1.svg";
 
+import { useContext, useEffect } from "react";
+import { LandingContext as Context } from "global/context";
+
 function MainSection() {
+  const { page, setPage } = useContext(Context);
+
+  useEffect(() => {
+    if (page === "inicio") console.log(page);
+  }, [page]);
+
   return (
     <Container id="inicio">
       <Title gradient>Halison Xavier</Title>
@@ -16,8 +23,8 @@ function MainSection() {
         Javascript Lover.
       </Subtitle>
       <BtnWrapper>
-        <MainCTA>My Skills</MainCTA>
-        <SubCTA>My XP</SubCTA>
+        <MainCTA onClick={() => setPage("features")}>My Skills</MainCTA>
+        <SubCTA onClick={() => setPage("cards")}>My XP</SubCTA>
       </BtnWrapper>
     </Container>
   );
