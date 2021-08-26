@@ -7,7 +7,12 @@ import { Container, Illustration2, FeatureList } from "./style";
 
 import illUstration2 from "assets/images/illustration2.svg";
 
+import { useContext } from "react";
+import { LandingContext as Context } from "global/context";
+
 function Features() {
+  const { setPage } = useContext(Context);
+
   return (
     <Container id="features">
       <TopTilt />
@@ -21,7 +26,7 @@ function Features() {
         </li>
         <li>Typescript</li>
       </FeatureList>
-      <MainCTA>My XP</MainCTA>
+      <MainCTA onClick={() => setPage("cards")}>My XP</MainCTA>
       <TopWaveOpaque2 />
     </Container>
   );

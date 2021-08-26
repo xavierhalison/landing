@@ -14,13 +14,14 @@ import Animations from "components/animations";
 
 function App() {
   const [page, setPage] = useState("inicio");
+  const [globalState, setGlobalState] = useState({});
 
   useEffect(() => {
     scrollTo(page);
   }, [page]);
 
   return (
-    <Context.Provider value={{ page, setPage }}>
+    <Context.Provider value={{ page, setPage, globalState, setGlobalState }}>
       <Animations />
       <Layout>
         <MainSection />

@@ -8,8 +8,12 @@ import { MainCTA } from "components/CTAs";
 
 import { TopWaveOpaque, TopWaveOpaque2 } from "components/dividers";
 
+import { useContext } from "react";
+import { LandingContext as Context } from "global/context";
+
 function CardSection() {
   const [expandedCard, toggleCard] = useState([true, false, false]);
+  const { setPage } = useContext(Context);
 
   function toggle(i) {
     const newCards = [].fill(0, 2, false);
@@ -57,7 +61,7 @@ function CardSection() {
           support independent artist in my area.
         </DropdownCard>
       </DropdownGrid>
-      <MainCTA>Contact</MainCTA>
+      <MainCTA onClick={() => setPage("footer")}>Contact</MainCTA>
       <TopWaveOpaque2 />
     </Container>
   );

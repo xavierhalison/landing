@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
+  align-items: center;
 
   @media screen and (min-width: 1025px) {
     padding: 0 var(--padding-lg);

@@ -18,7 +18,7 @@ function MainSection() {
     <Container id="inicio">
       <Title gradient>
         Hi there!
-        <br /> I'm Halison Xavier
+        <br /> I'm Halison
       </Title>
       <Illustration src={illUstration1} alt="" />
       <Subtitle>

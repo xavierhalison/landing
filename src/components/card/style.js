@@ -10,6 +10,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  > * {
+  }
+
   @media screen and (min-width: 1025px) {
     padding: 60px 40px;
 
@@ -34,6 +37,7 @@ const Container = styled.div`
     margin-bottom: 15px;
     font-weight: 800;
     font-size: 20px;
+    text-align: left;
   }
 `;
 

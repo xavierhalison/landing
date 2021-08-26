@@ -91,6 +91,7 @@ const MailForm = styled.div`
 
   ${H5} {
     margin-bottom: 10px;
+    text-align: center;
 
     @media screen and (min-width: 1025px) {
       font-size: 20px;
