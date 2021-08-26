@@ -33,9 +33,10 @@ function Footer() {
         <MainCTA>Subscribe</MainCTA>
       </MailForm>
       <SiteMap>
-        {sections.map(({ name, id }) => (
-          <li onClick={() => setPage(id)}>{name}</li>
-        ))}
+        {sections &&
+          sections.map(({ name, id }) => (
+            <li onClick={() => setPage(id)}>{name}</li>
+          ))}
       </SiteMap>
     </Container>
   );
