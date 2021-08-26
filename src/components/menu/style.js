@@ -1,5 +1,15 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { H3 } from "components/headings";
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const Container = styled.div`
   height: 50px;
@@ -8,6 +18,7 @@ const Container = styled.div`
   justify-content: center;
   font-family: "Montserrat Alternates";
   position: relative;
+  z-index: 2;
 
   color: var(--main-text);
   padding: 0 var(--padding-sm);
@@ -15,6 +26,15 @@ const Container = styled.div`
   @media screen and (min-width: 1025px) {
     justify-content: space-between;
     padding: 0 var(--padding-lg);
+  }
+
+  > .react-logo {
+    width: 40px;
+    animation: ${rotate} 20s linear infinite;
+
+    > g {
+      fill: var(--main-text);
+    }
   }
 
   > .menu-icon {

@@ -2,12 +2,16 @@ import styled from "styled-components";
 import { H1 as Title, H4 as Subtitle } from "components/headings";
 
 const Container = styled.div`
-  padding: 0 var(--padding-sm) calc(var(--padding-sm) * 2);
+  padding: 0 var(--padding-sm) calc(var(--padding-sm) * 3);
   display: grid;
   height: calc(100vh - 50px);
   align-items: center;
   justify-items: center;
   background-image: var(--bg-main-section);
+
+  > * {
+    z-index: 1;
+  }
 
   @media screen and (min-width: 1025px) {
     padding: 0 var(--padding-lg);
@@ -44,10 +48,15 @@ const Container = styled.div`
 `;
 
 const Illustration = styled.img`
-  width: 100%;
+  width: 70%;
+  border-radius: 50%;
+  border: 5px solid var(--main-text);
+  box-shadow: 0px 0px 10px var(--main-text);
 
   @media screen and (min-width: 1025px) {
-    width: 500px;
+    border: 8px solid var(--main-text);
+    width: 350px;
+    margin-top: 60px;
     grid-row: 1 / 4;
   }
 `;

@@ -11,6 +11,10 @@ const Container = styled.div`
   align-content: space-around;
   justify-content: center;
 
+  > * {
+    z-index: 1;
+  }
+
   @media screen and (min-width: 1025px) {
     padding: calc(var(--padding-lg) / 2) var(--padding-lg);
 

@@ -10,6 +10,7 @@ import FooterSection from "components/sections/footer";
 import { LandingContext as Context } from "global/context";
 
 import { scrollTo } from "helpers/navigation";
+import Animations from "components/animations";
 
 function App() {
   const [page, setPage] = useState("inicio");
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <Context.Provider value={{ page, setPage }}>
+      <Animations />
       <Layout>
         <MainSection />
         <FeaturesSection />

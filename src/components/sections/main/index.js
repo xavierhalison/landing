@@ -2,7 +2,7 @@ import { H1 as Title, H4 as Subtitle } from "components/headings";
 import { MainCTA, SubCTA } from "components/CTAs";
 
 import { Container, Illustration, BtnWrapper } from "./style";
-import illUstration1 from "assets/images/illustration1.svg";
+import illUstration1 from "assets/images/illustration1.jpg";
 
 import { useContext, useEffect } from "react";
 import { LandingContext as Context } from "global/context";
@@ -16,10 +16,13 @@ function MainSection() {
 
   return (
     <Container id="inicio">
-      <Title gradient>Halison Xavier</Title>
+      <Title gradient>
+        Hi there!
+        <br /> I'm Halison Xavier
+      </Title>
       <Illustration src={illUstration1} alt="" />
       <Subtitle>
-        Frontend Software Engineer, Open Source Enthusiast, Web Crafter,
+        I'm Frontend Software Engineer, Open Source Enthusiast, Web Crafter,
         Javascript Lover.
       </Subtitle>
       <BtnWrapper>

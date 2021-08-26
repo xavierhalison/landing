@@ -8,6 +8,8 @@ import {
 
 import { H3 as Brand } from "components/headings";
 
+import ReactLogo from "components/animations/reactlogo";
+
 import { Menu as MenuIcon } from "react-feather";
 
 import { useState, useEffect } from "react";
@@ -31,7 +33,8 @@ function Menu({ sections }) {
       <MenuIcon className="menu-icon" onClick={() => toggle(!visible)}>
         Menu
       </MenuIcon>
-      <Brand gradient>Halison</Brand>
+      {/* <Brand gradient>Halison</Brand> */}
+      <ReactLogo className="react-logo" />
       {visible && <PanelShadow />}
       <SuspensePanel visible={visible}>
         <MenuList>
