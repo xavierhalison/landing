@@ -15,17 +15,17 @@ const Container = styled.div`
 
   @media screen and (min-width: 1025px) {
     padding: 0 var(--padding-lg);
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
   ${Title} {
     text-align: center;
 
     @media screen and (min-width: 1025px) {
-      text-align: left;
       align-self: end;
-      width: 100%;
+      width: auto;
+      grid-row: 2;
     }
   }
 
@@ -37,11 +37,11 @@ const Container = styled.div`
 
     @media screen and (min-width: 1025px) {
       font-size: 0.8rem;
-      text-align: left;
-      grid-column: 1 / 2;
-      grid-row: 2;
-      justify-self: start;
-      align-self: end;
+      text-align: center;
+      width: 500px;
+      justify-self: center;
+      grid-row: 3;
+      align-self: center;
       margin-bottom: 20px;
     }
   }
@@ -55,9 +55,9 @@ const Illustration = styled.img`
 
   @media screen and (min-width: 1025px) {
     border: 8px solid var(--main-text);
-    width: 350px;
+    width: 200px;
     margin-top: 60px;
-    grid-row: 1 / 4;
+    grid-row: 1;
   }
 `;
 
@@ -68,11 +68,10 @@ const BtnWrapper = styled.div`
 
   @media screen and (min-width: 1025px) {
     text-align: left;
-    grid-column: 1 / 2;
-    grid-row: 3;
+    grid-row: 4;
     align-self: start;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
   }
 `;

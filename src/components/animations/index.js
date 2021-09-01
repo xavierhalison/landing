@@ -1,4 +1,4 @@
-import { Container, ReactAtom } from "./style";
+import { Container } from "./style";
 
 import ReactLogo from "./reactlogo";
 

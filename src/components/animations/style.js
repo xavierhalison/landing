@@ -31,6 +31,12 @@ const Container = styled.div`
     > g {
       fill: #eee;
     }
+
+    @media screen and (min-width: 1025px) {
+      width: 580px;
+      top: 60px;
+      left: -50px;
+    }
   }
 
   > .logo-2 {
@@ -42,6 +48,12 @@ const Container = styled.div`
     opacity: 0.4;
     > g {
       fill: #fff;
+    }
+
+    @media screen and (min-width: 1025px) {
+      width: 480px;
+      top: 360px;
+      left: 190px;
     }
   }
 `;

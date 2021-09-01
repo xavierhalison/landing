@@ -64,7 +64,7 @@ export const GlobalStyle = createGlobalStyle`
         --radial-gradient-3: radial-gradient(circle, #FFCB3D 0%, #FF5645 50%, #DE3190 100%);
 
         --padding-sm: 1em;
-        --padding-lg: 10em;
+        --padding-lg: 12em;
     }
 
     /* montserrat-regular - latin */
